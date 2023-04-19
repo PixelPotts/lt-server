@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+// App.js
+import React, { useState } from 'react';
 import './App.css';
+import LineGraphCanvas from './LineGraphCanvas';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    // Add a new state variable to control the display of REM markers
+    const [showREMMarkers, setShowREMMarkers] = useState(false);
+
+    const handleUpdateClick = () => {
+        // Regenerate data and update the graph
+        window.location.reload();
+    };
+
+    // Define the handleToggleREMMarkers function
+    const handleToggleREMMarkers = () => {
+        setShowREMMarkers(!showREMMarkers);
+    };
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <div className="menu-bar">
+                    <button onClick={handleUpdateClick}>Update</button>
+                    {/* Update the onClick handler for the TOGGLE REM MARKERS button */}
+                    <button onClick={handleToggleREMMarkers}>TOGGLE REM MARKERS</button>
+                </div>
+                {/* Pass the showREMMarkers state variable as a prop */}
+                <LineGraphCanvas showREMMarkers={showREMMarkers} />
+            </header>
+        </div>
+    );
+};
 
 export default App;

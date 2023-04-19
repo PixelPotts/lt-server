@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lt-server/static/css/main.ca57846c.css",
+    "main.js": "/lt-server/static/js/main.7ca6275a.js",
+    "index.html": "/lt-server/index.html",
+    "main.ca57846c.css.map": "/lt-server/static/css/main.ca57846c.css.map",
+    "main.7ca6275a.js.map": "/lt-server/static/js/main.7ca6275a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca57846c.css",
+    "static/js/main.7ca6275a.js"
+  ]
+}
