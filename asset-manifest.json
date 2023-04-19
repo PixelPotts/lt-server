@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PixelPotts/lt-server/static/css/main.ca57846c.css",
+    "main.js": "/PixelPotts/lt-server/static/js/main.7ca6275a.js",
+    "index.html": "/PixelPotts/lt-server/index.html",
+    "main.ca57846c.css.map": "/PixelPotts/lt-server/static/css/main.ca57846c.css.map",
+    "main.7ca6275a.js.map": "/PixelPotts/lt-server/static/js/main.7ca6275a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca57846c.css",
+    "static/js/main.7ca6275a.js"
+  ]
+}
